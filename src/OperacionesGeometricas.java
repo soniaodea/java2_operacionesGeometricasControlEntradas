@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-import librerias.geometricas.*;
+import com.zubiri.geometria.*;
 
 public class OperacionesGeometricas {
 
@@ -31,9 +31,9 @@ public class OperacionesGeometricas {
 			System.out.println("Introduzca el radio del círculo en cuestión");
 
 			radio = sc.nextDouble();
-			cir.setRad(radio);
+			cir.setRadio(radio);
 			area = cir.area();
-			circunferencia = cir.circun();
+			circunferencia = cir.circunferencia();
 
 			System.out.println("El área del círculo es: " + area);
 			System.out.println("La circunferencia del círculo es: " +circunferencia);
@@ -46,17 +46,17 @@ public class OperacionesGeometricas {
 			System.out.println("\nIntroduce la altura del rectangulo");
 
 			altura = sc.nextDouble();
-			rec.setAlto(altura);
+			rec.setAltura(altura);
 
 			System.out.println("\nAhora introduce la anchura del rectangulo");
 
 			anchura = sc.nextDouble();
-			rec.setAncho(anchura);
+			rec.setBase(anchura);
 
 			perimetro = rec.perimetro();
-			superficie = rec.superficie();
+			superficie = rec.area();
 
-			System.out.println("\nCon una altura de: "+ rec.getAlto() + " y una anchura de: "+ rec.getAncho() +"...");
+			System.out.println("\nCon una altura de: "+ rec.getAltura() + " y una anchura de: "+ rec.getBase() +"...");
 			System.out.println("La superficie del rectangulo es: "+ superficie);
 			System.out.println("\ny el perimetro es: "+ perimetro);
 		}
